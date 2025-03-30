@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <title>CRUD táblázat – Webprog házi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="header">Web-programozás-1 Előadás Házi feladat</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Főoldal</a></li>
+      <li><a href="crud.html" class="active">Táblázat</a></li>
+      <li><a href="oldal3.html">Oldal 3</a></li>
+    </ul>
+  </nav>
+  <aside>
+    <p>CRUD feladat oldalsáv</p>
+  </aside>
+  <section>
+    <h2>Dolgozók kezelése</h2>
+
+    <form id="employeeForm">
+      <input type="text" id="name" placeholder="Név" required minlength="2">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="number" id="salary" placeholder="Fizetés" required min="100000">
+      <input type="text" id="city" placeholder="Város" required>
+      <button type="submit">Mentés</button>
+    </form>
+
+    <input class="search" type="text" id="searchInput" placeholder="Keresés...">
+
+    <table id="employeeTable">
+      <thead>
+        <tr>
+          <th data-col="name">Név</th>
+          <th data-col="email">Email</th>
+          <th data-col="salary">Fizetés</th>
+          <th data-col="city">Város</th>
+          <th>Műveletek</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Itt jelennek meg a dolgozók -->
+      </tbody>
+    </table>
+  </section>
+  <footer>
+    <p>Készítette: Busi Roland Olivér (ABC123), Minta Társ (XYZ789)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
