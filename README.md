@@ -13,4 +13,9 @@ Finomítások szükségesek lehetnek
 Táblázat 4x4 kell legyen alapból vagy feltöltés után??
 Fizetés minimumot módositottam 100-ra.
 A rendezés működik de csak növkegvő sorrendben ha jól láttam. Elég?
+
+2025.03.31.
+
+5. feladat elkezdve, még sok alakítani való van rajta.
+
  
