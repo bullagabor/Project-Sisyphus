@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="ajax.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Ajax Menü</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header">Web-programozás-1 Előadás Házi feladat</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Főoldal</a></li>
+        <li><a href="crud.html">Táblázat</a></li>
+        <li><a href="ajax.html">Oldal 3</a></li>
+      </ul>
+    </nav>  
+    <aside>
+      <p>Oldalsáv tartalma</p>
+    </aside>
+    <section>
+      <h1>Adatok</h1>
+      <div id='adatok'></div>
+      
+      <div id='letrehozasDiv'>
+        <h1>Létrehozás</h1>
+        Név (kötelező, max 30): <input id="nev" type="text"><br>
+        Magasság (kötelező, szám): <input id="magassag" type="text"><br>
+        <button type="submit" id="letrehozasGomb">Létrehozás</button><br>
+        <div id='letrehozasEredmeny'></div>
+      </div> 
+      
+      <div id='modositasDiv'>
+        <h1>Módosítás</h1>
+        ID (kötelező): <input id="modositId" type="text"><br> 
+        <button type="submit" id="adatLekerdezes">Adat lekérése</button><br>
+        Név (kötelező, max 30): <input id="modositNev" type="text"><br>
+        Magasság (kötelező, szám): <input id="modositMagassag" type="text"><br>
+        <button type="submit" id="modositasGomb">Módosítás</button><br>
+        <div id='modositasEredmeny'></div>    
+    </section>
+    <footer>
+      <p>Készítette: Busi Roland Olivér (F5L766), Bulla Gábor (TB3A81)</p>
+    </footer>
+    
+    </div> 
+  </body>
+</html>
