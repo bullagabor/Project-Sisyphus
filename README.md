@@ -21,7 +21,7 @@ A rendezés működik de csak növkegvő sorrendben ha jól láttam. Elég?
 3. feladattal elkészültem a napokban, hozzá adtam
 
 2025.04.02 -rbusi1
-6. feladat OOJS  hozzá adva
+6. feladat OOJS  elkezdtem csinálni
 
 06.04.02 -rbusi1
 Menü sorok frissítve, és finomhangolva mindenhol
