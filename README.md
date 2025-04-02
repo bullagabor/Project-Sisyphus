@@ -17,6 +17,9 @@ A rendezés működik de csak növkegvő sorrendben ha jól láttam. Elég?
 2025.03.31. -bullagabor
 5. feladat elkezdve, még sok alakítani való van rajta.
 
+2025.04.02. -rbusi1
+3. feladattal elkészültem a napokban, hozzá adtam
+
 2025.04.02 -rbusi1
 6. feladat OOJS  hozzá adva
 
