@@ -24,10 +24,16 @@ A rendezés működik de csak növkegvő sorrendben ha jól láttam. Elég?
 6. feladat OOJS  elkezdtem csinálni
 
 06.04.02 -rbusi1
-Menü sorok frissítve, és finomhangolva mindenhol
+Menüsorok frissítve, és finomhangolva mindenhol
 Hogy épp melyik menüben vagyunk jelzése szintén fixálva
 
 06.04.02. -rbusi1
-React feladattal elkezdtem kisérletezni, még nincs kézzelfogható eredmény
+React feladatot elkezdtem, még nincs kézzelfogható eredmény
+
+06.04.04 - rbusi1
+-React feladat Számológép és Amőba elkészültek 
+-Finomhangolások szükségesek lehetnek azért
+-A többi html kódban a menüket frissítettem hogy az oldalon átjárható legyen
+
 
  
