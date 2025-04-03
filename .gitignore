@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+*.log
+.cache/
+build/
+dist/
+
+# React output
+app1/node_modules/
+app1/build/
+
+app2/node_modules/
+app2/build/
+
+# IDE és rendszer fájlok
+.DS_Store
+.env
+.vscode/
+Thumbs.db
