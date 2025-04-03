@@ -30,10 +30,14 @@ Hogy épp melyik menüben vagyunk jelzése szintén fixálva
 06.04.02. -rbusi1
 React feladatot elkezdtem, még nincs kézzelfogható eredmény
 
+06.04.03. -rbusi1
+React feladathoz készült egy .getignore file hogy a felesleges fájlokat kezelje 
+
 06.04.04 - rbusi1
 -React feladat Számológép és Amőba elkészültek 
 -Finomhangolások szükségesek lehetnek azért
 -A többi html kódban a menüket frissítettem hogy az oldalon átjárható legyen
+
 
 
  
