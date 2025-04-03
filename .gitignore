@@ -8,6 +8,7 @@ dist/
 # React output
 app1/node_modules/
 app1/build/
+
 app2/node_modules/
 app2/build/
 
@@ -15,4 +16,5 @@ app2/build/
 .DS_Store
 .env
 .vscode/
+Thumbs.db
 Thumbs.db

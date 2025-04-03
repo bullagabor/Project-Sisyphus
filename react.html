@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>React alkalmazások</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1 class="header">Web-programozás-1 Előadás Házi feladat</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Főoldal</a></li>
+      <li><a href="crud.html">Táblázat</a></li>
+      <li><a href="ajax.html">Ajax</a></li>
+      <li><a href="html5-menu.html">HTML5 API</a></li>
+      <li><a href="react.html" class="active">React</a></li>
+    </ul>
+  </nav>
+
+  <aside>
+    <p>Oldalsáv tartalma</p>
+  </aside>
+
+  <section>
+    <nav>
+      <a href="#" onclick="loadApp(event, 'app1')">Alkalmazás 1</a>
+      <!-- Alkalmazás 2 később -->
+    </nav>
+
+    <iframe id="appFrame" width="100%" height="600px" style="border:none;"></iframe>
+  </section>
+
+  <footer>
+    <p>Készítette: Busi Roland Olivér (F5L766), Bulla Gábor (TB3A81)</p>
+  </footer>
+
+  <script>
+    function loadApp(event, appName) {
+      event.preventDefault();
+      document.getElementById('appFrame').src = appName + '/index.html';
+      document.querySelectorAll('section nav a').forEach(link => link.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
