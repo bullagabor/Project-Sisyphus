@@ -5,145 +5,152 @@
   <title>HTML5 API példák</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    section { border: 1px solid #070707; padding: 10px; margin: 10px 0; }
-    h2 { color: rgb(10, 10, 10); }
+    section h2 {
+      color: rgb(10, 10, 10);
+      border-bottom: 1px solid #ccc;
+      padding-top: 10px;
+    }
+
+    section > div {
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
 
-<header><h1>Web-programozás-1 Előadás Házi feladat</h1></header>
+<header><h1 class="header">Web-programozás-1 Előadás Házi feladat</h1></header>
 
 <nav>
   <ul>
     <li><a href="index.html">Főoldal</a></li>
-      <li><a href="crud.html">Táblázat</a></li>
-      <li><a href="ajax.html">Ajax</a></li>
-      <li><a href="html5-menu.html" class="active">HTML5 API</a></li>
-      <li><a href="react.html">React</a></li>
+    <li><a href="crud.html">Táblázat</a></li>
+    <li><a href="ajax.html">Ajax</a></li>
+    <li><a href="html5-menu.html" class="active">HTML5 API</a></li>
+    <li><a href="react.html">React</a></li>
   </ul>
 </nav>
 
-<div class="content">
+<aside>
+  <p>HTML5 API feladat oldalsáv</p>
+</aside>
 
-
-<!-- Web Storage -->
 <section>
-  <h2>Web Storage</h2>
-  <button onclick="increment()">Frissítés számláló </button>
-  <p id="counter"></p>
-  <script>
-    function increment() {
-      if (sessionStorage.count) {
-        sessionStorage.count = Number(sessionStorage.count) + 1;
-      } else {
-        sessionStorage.count = 1;
+
+  <!-- Web Storage -->
+  <div>
+    <h2>Web Storage</h2>
+    <button onclick="increment()">Frissítés számláló </button>
+    <p id="counter"></p>
+    <script>
+      function increment() {
+        if (sessionStorage.count) {
+          sessionStorage.count = Number(sessionStorage.count) + 1;
+        } else {
+          sessionStorage.count = 1;
+        }
+        document.getElementById("counter").innerText = "Számláló: " + sessionStorage.count;
       }
-      document.getElementById("counter").innerText = "Számláló: " + sessionStorage.count;
-    }
-  </script>
-</section>
-
-<!-- Web Worker -->
-<section>
-  <h2>Web Worker</h2>
-  <button onclick="startWorker()">Hosszú számlálás</button>
-  <p id="workerResult"></p>
-  <script>
-    function startWorker() {
-      const worker = new Worker(URL.createObjectURL(new Blob([`
-        let j = 0;
-        for (let i = 0; i <= 100000000; i++) j = i;
-        postMessage(j);
-      `], { type: 'text/javascript' })));
-
-      worker.onmessage = function(event) {
-        document.getElementById("workerResult").innerText = "Eredmény: " + event.data;
-      };
-    }
-  </script>
-</section>
-
-<!-- Server-Sent Events -->
-<section>
-  <h2>Server-Sent Events</h2>
-  <p>Böngésző támogatás ellenőrzése és működés.</p>
-  <script>
-    if (typeof(EventSource) !== "undefined") {
-      document.write("A böngésző támogatja az SSE-t.");
-    } else {
-      document.write("Nem támogatott.");
-    }
-  </script>
-</section>
-
-<!-- Geolocation -->
-<section>
-  <h2>Geolocation API</h2>
-  <button onclick="getLocation()">Koordináták meghatározása</button>
-  <p id="location"></p>
-  <script>
-    function getLocation() {
-      const x = document.getElementById("location");
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(pos =>
-          x.innerText = "Szélesség: " + pos.coords.latitude + 
-                        ", Hosszúság: " + pos.coords.longitude
-        );
-      } else {
-        x.innerText = "A böngésző nem támogatja.";
-      }
-    }
-  </script>
-</section>
-
-<!-- Drag and Drop -->
-<section>
-  <h2>Drag and Drop API</h2>
-
-  <div id="dropZone" ondrop="drop(event)" ondragover="allowDrop(event)"
-       style="width:300px;height:150px;border:1px solid black;padding:10px;">
-    Tedd ide a négyzetet
-  </div>
-  <br>
-
-  <div id="dragBox" draggable="true" ondragstart="drag(event)"
-       style="width:100px;height:100px;background-color:rgb(235, 17, 90);color:white;
-              display:flex;align-items:center;justify-content:center;
-              font-weight:bold;cursor:grab;"
-       id="dragImg">
-    Mozgass hihi!
+    </script>
   </div>
 
-  <script>
-    function allowDrop(ev) {
-      ev.preventDefault();
-    }
+  <!-- Web Worker -->
+  <div>
+    <h2>Web Worker</h2>
+    <button onclick="startWorker()">Hosszú számlálás</button>
+    <p id="workerResult"></p>
+    <script>
+      function startWorker() {
+        const worker = new Worker(URL.createObjectURL(new Blob([`
+          let j = 0;
+          for (let i = 0; i <= 100000000; i++) j = i;
+          postMessage(j);
+        `], { type: 'text/javascript' })));
 
-    function drag(ev) {
-      ev.dataTransfer.setData("text", ev.target.id);
-    }
+        worker.onmessage = function(event) {
+          document.getElementById("workerResult").innerText = "Eredmény: " + event.data;
+        };
+      }
+    </script>
+  </div>
 
-    function drop(ev) {
-      ev.preventDefault();
-      const data = ev.dataTransfer.getData("text");
-      const elem = document.getElementById(data);
-      ev.target.appendChild(elem);
-    }
-  </script>
+  <!-- Server-Sent Events -->
+  <div>
+    <h2>Server-Sent Events</h2>
+    <p>Böngésző támogatás ellenőrzése és működés.</p>
+    <script>
+      if (typeof(EventSource) !== "undefined") {
+        document.write("A böngésző támogatja az SSE-t.");
+      } else {
+        document.write("Nem támogatott.");
+      }
+    </script>
+  </div>
+
+  <!-- Geolocation -->
+  <div>
+    <h2>Geolocation API</h2>
+    <button onclick="getLocation()">Koordináták meghatározása</button>
+    <p id="location"></p>
+    <script>
+      function getLocation() {
+        const x = document.getElementById("location");
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(pos =>
+            x.innerText = "Szélesség: " + pos.coords.latitude + 
+                          ", Hosszúság: " + pos.coords.longitude
+          );
+        } else {
+          x.innerText = "A böngésző nem támogatja.";
+        }
+      }
+    </script>
+  </div>
+
+  <!-- Drag and Drop -->
+  <div>
+    <h2>Drag and Drop API</h2>
+    <div id="dropZone" ondrop="drop(event)" ondragover="allowDrop(event)"
+         style="width:300px;height:150px;border:1px solid black;padding:10px;">
+      Tedd ide a négyzetet
+    </div>
+    <br>
+    <div id="dragBox" draggable="true" ondragstart="drag(event)"
+         style="width:100px;height:100px;background-color:rgb(235, 17, 90);color:white;
+                display:flex;align-items:center;justify-content:center;
+                font-weight:bold;cursor:grab;"
+         id="dragImg">
+      Mozgass hihi!
+    </div>
+    <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+
+      function drop(ev) {
+        ev.preventDefault();
+        const data = ev.dataTransfer.getData("text");
+        const elem = document.getElementById(data);
+        ev.target.appendChild(elem);
+      }
+    </script>
+  </div>
+
+  <!-- SVG -->
+  <div>
+    <h2>SVG</h2>
+    <svg width="150" height="150">
+      <circle cx="50" cy="50" r="42" stroke="blue" stroke-width="7" fill="grey" />
+    </svg>
+  </div>
+
 </section>
-
-<!-- SVG -->
-<section>
-  <h2>SVG</h2>
-  <svg width="150" height="150">
-    <circle cx="50" cy="50" r="42" stroke="blue" stroke-width="7" fill="grey" />
-  </svg>
-</section>
-
-</div>
 
 <footer>
-  Készítette: Busi Roland Olivér (F5L766), Bulla Gábor (TB3A81)
+  <p>Készítette: Busi Roland Olivér (F5L766), Bulla Gábor (TB3A81)</p>
 </footer>
 
 </body>
