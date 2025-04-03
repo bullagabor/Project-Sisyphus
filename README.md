@@ -37,6 +37,7 @@ React feladathoz készült egy .getignore file hogy a felesleges fájlokat kezel
 -React feladat Számológép és Amőba elkészültek 
 -Finomhangolások szükségesek lehetnek azért
 -A többi html kódban a menüket frissítettem hogy az oldalon átjárható legyen
+-HTML5 feladat oldalsáv fixálva
 
 -Ez a feladatrész még nincs megcsinálva külön: A GitHub-on készítsen egy react mappát, amibe 1-1 mappába tegye fel a két alkalmazás src mappáinak a tartalmát.
 
