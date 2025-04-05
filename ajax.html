@@ -19,33 +19,38 @@
         <li><a href="html5-menu.html">HTML5 API</a></li>
         <li><a href="chart.html">Diagram</a></li>
         <li><a href="oojs.html">OOJS</a></li>
-        <li><a href="react.html">React</a></li>
-
+        <li><a href="react.html">React</a></li>       
       </ul>
     </nav>  
     <aside>
-      <p>Oldalsáv tartalma</p>
+      <p>AJAX menü</p>
     </aside>
     <section>
-      <h1>Adatok</h1>
-      <div id='adatok'></div>
-      
-      <div id='letrehozasDiv'>
-        <h1>Létrehozás</h1>
-        Név (kötelező, max 30): <input id="nev" type="text"><br>
-        Magasság (kötelező, szám): <input id="magassag" type="text"><br>
-        <button type="submit" id="letrehozasGomb">Létrehozás</button><br>
-        <div id='letrehozasEredmeny'></div>
-      </div> 
-      
-      <div id='modositasDiv'>
-        <h1>Módosítás</h1>
-        ID (kötelező): <input id="modositId" type="text"><br> 
-        <button type="submit" id="adatLekerdezes">Adat lekérése</button><br>
-        Név (kötelező, max 30): <input id="modositNev" type="text"><br>
-        Magasság (kötelező, szám): <input id="modositMagassag" type="text"><br>
-        <button type="submit" id="modositasGomb">Módosítás</button><br>
-        <div id='modositasEredmeny'></div>    
+      <h1>AJAX API CRUD alkalmazás</h1>
+
+      <h2>Adatok lekérdezése</h2>
+      <button onclick="fetchData()">Adatok betöltése</button>
+    
+      <h2>Új adat hozzáadása (Create)</h2>
+      <input type="text" id="nev" placeholder="Név">
+      <input type="text" id="magassag" placeholder="Magasság">
+      <button onclick="createData()">Hozzáadás</button>
+    
+      <h2>Adat módosítása (Update)</h2>
+      <input type="text" id="modositId" placeholder="ID">
+      <button onclick="getDataForId()">Adatok betöltése</button><br>
+      <input type="text" id="modositNev" placeholder="Új név">
+      <input type="text" id="modositMagassag" placeholder="Új magasság">
+      <button onclick="updateData()">Mentés</button>
+    
+      <h2>Adat törlése (Delete)</h2>
+      <input type="text" id="torlesId" placeholder="ID törléshez">
+      <button onclick="deleteData()">Törlés</button>
+    
+      <div id="visszajelzes"></div>
+      <div id="adatok"></div>
+    
+      <script src="ajax.js"></script>
     </section>
     <footer>
       <p>Készítette: Busi Roland Olivér (F5L766), Bulla Gábor (TB3A81)</p>

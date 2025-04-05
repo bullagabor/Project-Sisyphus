@@ -26,7 +26,9 @@
       <li><a href="crud.html">Táblázat</a></li>
       <li><a href="ajax.html">Ajax</a></li>
       <li><a href="html5-menu.html">HTML5 API</a></li>
-      <li><a href="oojs.html" class="active">Oojs</a></li>
+      <li><a href="chart.html">Diagram</a></li>
+      <li><a href="oojs.html" class="active">OOJS</a></li>
+      <li><a href="react.html">React</a></li>     
     </ul>
   </nav>
 
@@ -35,47 +37,26 @@
   </aside>
 
   <section>
-    <h2>Objektumorientált JavaScript – Járművek</h2>
+    <h1>Autók hozzáadása</h1>
 
-    <!-- Itt jelennek meg a kártyák -->
-    <div id="output"></div>
-
-    <script>
-      class Vehicle {
-        constructor(brand, type) {
-          this.brand = brand;
-          this.type = type;
-        }
-
-        getInfo() {
-          return `${this.brand} egy ${this.type}`;
-        }
-
-        render() {
-          const div = document.createElement("div");
-          div.className = "card";
-          div.innerText = this.getInfo();
-          document.getElementById("output").appendChild(div);
-        }
-      }
-
-      class Car extends Vehicle {
-        constructor(brand, model) {
-          super(brand, "autó");
-          this.model = model;
-        }
-
-        getInfo() {
-          return `${super.getInfo()}, modell: ${this.model}`;
-        }
-      }
-
-      const v1 = new Vehicle("Yamaha", "motor");
-      const v2 = new Car("Toyota", "Corolla");
-
-      v1.render();
-      v2.render();
-    </script>
+    <h2>Új autó rögzítése</h2>
+    <form id="autoForm">
+      <label for="marka">Márka:</label>
+      <input type="text" id="marka" placeholder="Pl. Toyota" required><br>
+  
+      <label for="tipus">Típus:</label>
+      <input type="text" id="tipus" placeholder="Pl. Corolla" required><br>
+  
+      <label for="evjarat">Évjárat:</label>
+      <input type="number" id="evjarat" placeholder="Pl. 2020" required><br>
+  
+      <button type="submit">Autó hozzáadása</button>
+    </form>
+  
+    <h2>Hozzáadott autók</h2>
+    <div id="carContainer"></div>
+  
+    <script src="oojs.js"></script>
   </section>
 
   <footer>

@@ -40,8 +40,9 @@ header, footer {
     border-right: 1px solid white;
   }
   
-  a.active {
-    border-bottom: 5px solid blue;
+ a.active {
+  border-bottom: 5px solid blue;
+ 
   }
   
   a:hover {

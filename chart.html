@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html lang="hu">
-    <head>
-        <meta charset="UTF-8">
-        <title>Chart.js</title>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <link rel="stylesheet" href="style.css">
-        <style>
-          table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 5px;
-            text-align: center;
-            cursor: pointer;
-          }
-          tr:hover {
-            background-color: #eee;
-          }
-        </style>
-      </head>
-      
+<head>
+  <meta charset="UTF-8">
+  <title>Chart.js</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    table {
+      width: 60%;
+      margin: 0 auto;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+      text-align: center;
+      cursor: pointer;
+    }
+    tr:hover {
+      background-color: #eee;
+    }
+    canvas {
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
 <body>
 
-    <header><h1>Web-programozás-1 Előadás Házi feladat</h1></header>
+<header>
+  <h1>Web-programozás-1 Előadás Házi feladat</h1>
+</header>
 
 <nav>
   <ul>
     <li><a href="index.html">Főoldal</a></li>
-    <li><a href="crud.html">Táblázat</a></li>
-    <li><a href="ajax.html">Ajax</a></li>
-    <li><a href="html5-menu.html">HTML5 API</a></li>
-    <li><a href="chart.html" class="active">Diagram</a></li>
-    <li><a href="oojs.html">OOJS</a></li>
-    <li><a href="react.html">React</a></li>
-  </ul>
+
+      <li><a href="crud.html">Táblázat</a></li>
+      <li><a href="ajax.html">Ajax</a></li>
+      <li><a href="html5-menu.html">HTML5 API</a></li>
+      <li><a href="chart.html" class="active">Diagram</a></li>
+      <li><a href="oojs.html">OOJS</a></li>
+      <li><a href="react.html">React</a></li>       
+
 </nav>
+
+<aside>
+  <p>Oldalsáv tartalma</p>
+</aside>
 
 <div class="content">
 
-<h2>Kattintson egy sorra!</h2>
+  <h2 style="text-align:center;">Kattintson egy sorra!</h2>
 
-<table id="dataTable">
-  <tbody>
-    <tr><td>10</td><td>20</td><td>30</td><td>40</td><td>50</td></tr>  <!-- növekvő -->
-    <tr><td>50</td><td>40</td><td>30</td><td>20</td><td>10</td></tr>  <!-- csökkenő -->
-    <tr><td>10</td><td>30</td><td>10</td><td>30</td><td>10</td></tr>  <!-- hullámzó -->
-    <tr><td>25</td><td>25</td><td>25</td><td>25</td><td>25</td></tr>  <!-- állandó -->
-    <tr><td>5</td><td>40</td><td>15</td><td>50</td><td>20</td></tr>    <!-- véletlen jellegű -->
-    
-  </tbody>
-</table>
+  <table id="dataTable">
+    <tbody>
+      <tr><td>10</td><td>20</td><td>30</td><td>40</td><td>50</td></tr>
+      <tr><td>50</td><td>40</td><td>30</td><td>20</td><td>10</td></tr>
+      <tr><td>10</td><td>30</td><td>10</td><td>30</td><td>10</td></tr>
+      <tr><td>25</td><td>25</td><td>25</td><td>25</td><td>25</td></tr>
+      <tr><td>5</td><td>40</td><td>15</td><td>50</td><td>20</td></tr>
+    </tbody>
+  </table>
 
-<br>
-<canvas id="myChart" width="700" height="350"></canvas>
+  <canvas id="myChart" width="700" height="350"></canvas>
+
+</div>
+
+<footer>
+  Készítette: Busi Roland Olivér (F5L766), Bulla Gábor (TB3A81)
+</footer>
 
 <script>
   const ctx = document.getElementById('myChart').getContext('2d');
@@ -84,3 +102,4 @@
 
 </body>
 </html>
+
