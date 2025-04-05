@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("adatLekerdezes").addEventListener("click", fetchDataById);
 });
 
-const CODE = "123456"; // A felhasználó által megadott kód
-const API_URL = "https://api.example.com";
+const CODE = "TB3A81efg456"; // A felhasználó által megadott kód
+const API_URL = "http://gamf.nhely.hu/ajax2/";
 
 function fetchData() {
     fetch(`${API_URL}?op=read&code=${CODE}`)
