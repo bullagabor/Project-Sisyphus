@@ -1,56 +1,88 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-  <meta charset="utf-8">
-  <script type="text/javascript" src="ajax.js"></script>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX feladat</title>
   <link rel="stylesheet" href="style.css">
-  <title>Ajax Menü</title>
-  </head>
-  
-  <body>
-    <header>
-      <h1 class="header">Web-programozás-1 Előadás Házi feladat</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Főoldal</a></li>
-        <li><a href="crud.html">Táblázat</a></li>
-        <li><a href="ajax.html" class="active">Ajax</a></li>
-        <li><a href="html5-menu.html">HTML5 API</a></li>
-        <li><a href="chart.html">Diagram</a></li>
-        <li><a href="oojs.html">OOJS</a></li>
-        <li><a href="react.html">React</a></li>
+  <script src="ajax.js" defer></script>
+  <style>
+    aside {
+      width: 180px;
+      float: left;
+      background-color: #f2f2f2;
+      height: 100%;
+      padding: 10px;
+    }
+    .content {
+      margin-left: 200px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
 
-      </ul>
-    </nav>  
-    <aside>
-      <p>Oldalsáv tartalma</p>
-    </aside>
-    <section>
-      <h1>Adatok</h1>
-      <div id='adatok'></div>
+  <header><h1>Web-programozás-1 Előadás Házi feladat</h1></header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Főoldal</a></li>
+      <li><a href="crud.html">Táblázat</a></li>
+      <li><a href="ajax.html" class="active">Ajax</a></li>
+      <li><a href="html5-menu.html">HTML5 API</a></li>
+      <li><a href="chart.html">Diagram</a></li>
+      <li><a href="oojs.html">OOJS</a></li>
+      <li><a href="react.html">React</a></li>
+    </ul>
+  </nav>
+
+  <aside>
+    <p>Oldalsáv tartalma</p>
+  </aside>
+
+  <div class="content">
+    <main>
+      <h2>Adatok kezelése AJAX segítségével</h2>
+
+      <div>
+        <button onclick="readData()">Adatok betöltése</button>
+        <div id="dataOutput"></div>
+        <div id="stats"></div>
+      </div>
+
+      <hr>
+
+      <h3>Új adat létrehozása</h3>
+      <input id="nameCreate" placeholder="Név" maxlength="30">
+      <input id="heightCreate" placeholder="Magasság" maxlength="30">
+      <input id="weightCreate" placeholder="Súly" maxlength="30">
+      <button onclick="createData()">Létrehozás</button>
+      <p id="createMessage"></p>
+
+      <hr>
+
+      <h3>Adat módosítása</h3>
       
-      <div id='letrehozasDiv'>
-        <h1>Létrehozás</h1>
-        Név (kötelező, max 30): <input id="nev" type="text"><br>
-        Magasság (kötelező, szám): <input id="magassag" type="text"><br>
-        <button type="submit" id="letrehozasGomb">Létrehozás</button><br>
-        <div id='letrehozasEredmeny'></div>
-      </div> 
-      
-      <div id='modositasDiv'>
-        <h1>Módosítás</h1>
-        ID (kötelező): <input id="modositId" type="text"><br> 
-        <button type="submit" id="adatLekerdezes">Adat lekérése</button><br>
-        Név (kötelező, max 30): <input id="modositNev" type="text"><br>
-        Magasság (kötelező, szám): <input id="modositMagassag" type="text"><br>
-        <button type="submit" id="modositasGomb">Módosítás</button><br>
-        <div id='modositasEredmeny'></div>    
-    </section>
-    <footer>
-      <p>Készítette: Busi Roland Olivér (F5L766), Bulla Gábor (TB3A81)</p>
-    </footer>
-    
-    </div> 
-  </body>
+<input type="text" id="updateId" placeholder="ID" onblur="getDataById()">
+
+      <button onclick="getDataForId()">Adat betöltése módosításhoz</button><br>
+      <input id="nameUpdate" placeholder="Név" maxlength="30">
+      <input id="heightUpdate" placeholder="Magasság" maxlength="30">
+      <input id="weightUpdate" placeholder="Súly" maxlength="30">
+      <button onclick="updateData()">Módosítás</button>
+      <p id="updateMessage"></p>
+
+      <hr>
+
+      <h3>Adat törlése</h3>
+      <input id="deleteId" placeholder="ID">
+      <button onclick="deleteData()">Törlés</button>
+      <p id="deleteMessage"></p>
+    </main>
+  </div>
+
+  <footer>
+    Készítette: Busi Roland Olivér (F5L766), Bulla Gábor (TB3A81)
+  </footer>
+
+</body>
 </html>
