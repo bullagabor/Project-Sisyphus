@@ -1,4 +1,4 @@
-const CODE = "TB3A81efg456";
+const code = "F5L766-TB3A81";
 const API_URL = "http://gamf.nhely.hu/ajax2/";
 
 function fetchData() {
