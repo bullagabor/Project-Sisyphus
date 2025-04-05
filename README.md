@@ -39,7 +39,14 @@ React feladathoz készült egy .getignore file hogy a felesleges fájlokat kezel
 -A többi html kódban a menüket frissítettem hogy az oldalon átjárható legyen
 -HTML5 feladat oldalsáv fixálva
 
+06.04.05 - rbusi1 
+-menük fixálva
+-scr mappa miatt a react 2. feladat újra legenerálva - a merge bezúzta
+-hozzá adtam az scr mappát külön hogy biztos meglegyen most
+
 -Ez a feladatrész még nincs megcsinálva külön: A GitHub-on készítsen egy react mappát, amibe 1-1 mappába tegye fel a két alkalmazás src mappáinak a tartalmát.
+
+
 
 ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 Will Turner:
