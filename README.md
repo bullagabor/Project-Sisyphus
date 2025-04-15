@@ -1,7 +1,7 @@
 Webprogramozás 1 – Előadás beadandó
 
 Készítette:
-Busi Roland Olivér (F5L766)
+Busi Roland Olivér (F5L766) / 
 Bulla Gábor (TB3A81)
 
 Tartalom:
