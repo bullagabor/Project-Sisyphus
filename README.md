@@ -1,5 +1,5 @@
 # Project-Sisyphus
-Web-programozás 1 – Előadás Beadandó feladat 
+Web-programozás 1 – Előadás Beadandó feladat - Előrehaladás
 
 2025.03.30 -rbusi1
 1 feladat korábban megírva hozzá adva: 
@@ -10,9 +10,8 @@ Szöveg részek szerkesztése. -- Gábor neptun kódja még hiányzik!!
 2025.03.30 -rbusi1
 2. feladat hozzá adva.
 Finomítások szükségesek lehetnek
-Táblázat 4x4 kell legyen alapból vagy feltöltés után??
 Fizetés minimumot módositottam 100-ra.
-A rendezés működik de csak növkegvő sorrendben ha jól láttam. Elég?
+A rendezés működik
 
 2025.03.31. -bullagabor
 5. feladat elkezdve, még sok alakítani való van rajta.
@@ -44,11 +43,8 @@ React feladathoz készült egy .getignore file hogy a felesleges fájlokat kezel
 -scr mappa miatt a react 2. feladat újra legenerálva - a merge bezúzta
 -hozzá adtam az scr mappát külön hogy biztos meglegyen most
 
--Ez a feladatrész még nincs megcsinálva külön: A GitHub-on készítsen egy react mappát, amibe 1-1 mappába tegye fel a két alkalmazás src mappáinak a tartalmát.
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
-
-
-¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 Will Turner:
 -Vagy őrültek vagyunk, vagy zsenik. / 
 Jack Sparrow:
