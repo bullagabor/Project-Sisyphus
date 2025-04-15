@@ -1,54 +1,39 @@
-# Project-Sisyphus
-Web-programozás 1 – Előadás Beadandó feladat - Előrehaladás
+Webprogramozás 1 – Előadás beadandó
+Készítette:
+Busi Roland Olivér (F5L766)
+Bulla Gábor (TB3A81)
 
-2025.03.30 -rbusi1
-1 feladat korábban megírva hozzá adva: 
-Az alapok megvannak remélhetőleg jól!
-Alakítgattam a színezésen.
-Szöveg részek szerkesztése. -- Gábor neptun kódja még hiányzik!!
+Tartalom:
+Ez a repository a Webprogramozás 1 előadás beadandó feladatát tartalmazza.
+A projekt különböző front-end technológiákat alkalmaz HTML, CSS, JavaScript, Chart.js és React felhasználásával.
 
-2025.03.30 -rbusi1
-2. feladat hozzá adva.
-Finomítások szükségesek lehetnek
-Fizetés minimumot módositottam 100-ra.
-A rendezés működik
+Menüpontok és funkciók:
+Főoldal: bemutatkozás
 
-2025.03.31. -bullagabor
-5. feladat elkezdve, még sok alakítani való van rajta.
+Táblázat: CRUD funkciók JavaScript-tel
 
-2025.04.02. -rbusi1
-3. feladattal elkészültem a napokban, hozzá adtam
+Ajax: adatkezelés API-n keresztül, validációval
 
-2025.04.02 -rbusi1
-6. feladat OOJS  elkezdtem csinálni
+HTML5 API: Web Storage, Web Worker, Geolocation stb.
 
-06.04.02 -rbusi1
-Menüsorok frissítve, és finomhangolva mindenhol
-Hogy épp melyik menüben vagyunk jelzése szintén fixálva
+Diagram: Chart.js vonaldiagram
 
-06.04.02. -rbusi1
-React feladatot elkezdtem, még nincs kézzelfogható eredmény
+OOJS: objektumorientált JavaScript példa (járművek)
 
-06.04.03. -rbusi1
-React feladathoz készült egy .getignore file hogy a felesleges fájlokat kezelje 
+React: két SPA alkalmazás (számológép, Tic Tac Toe)
 
-06.04.04 - rbusi1
--React feladat Számológép és Amőba elkészültek 
--Finomhangolások szükségesek lehetnek azért
--A többi html kódban a menüket frissítettem hogy az oldalon átjárható legyen
--HTML5 feladat oldalsáv fixálva
+React alkalmazások:
+app1: Számológép (useState, komponensek)
 
-06.04.05 - rbusi1 
--menük fixálva
--scr mappa miatt a react 2. feladat újra legenerálva - a merge bezúzta
--hozzá adtam az scr mappát külön hogy biztos meglegyen most
+app2: Tic Tac Toe játék (useState, komponensek, újraindítás gomb, színezés)
 
-¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+Fejlesztési környezet:
+Visual Studio Code
 
-Will Turner:
--Vagy őrültek vagyunk, vagy zsenik. / 
-Jack Sparrow:
--Különös, milyen gyakran jár együtt ez a két vonás.
+React (create-react-app)
 
+Chart.js CDN
 
- 
+GitHub Desktop
+
+Local webserver: serve .
