@@ -23,6 +23,7 @@ OOJS: objektumorientált JavaScript példa (járművek)
 React: két SPA alkalmazás (számológép, Tic Tac Toe)
 
 React alkalmazások:
+
 app1: Számológép (useState, komponensek)
 
 app2: Tic Tac Toe játék (useState, komponensek, újraindítás gomb, színezés)
